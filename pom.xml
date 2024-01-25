@@ -95,7 +95,7 @@
 	<build>
 		<resources>
 			<resource>
-				<directory>docs</directory>
+				<directory>assets</directory>
 			</resource>
 		</resources>
 		<plugins>
