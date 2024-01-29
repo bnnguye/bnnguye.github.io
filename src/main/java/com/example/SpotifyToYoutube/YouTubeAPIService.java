@@ -28,7 +28,7 @@ public class YouTubeAPIService {
         request.setKey(key);
         request.setQ(searchResult + " lyrics |" + searchResult);
         request.setType("video");
-        request.setMaxResults(5L);
+        request.setMaxResults(2L);
         request.setRegionCode("AU");
 
         log.info("Search: " + request.getQ());
