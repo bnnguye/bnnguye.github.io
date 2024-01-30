@@ -95,7 +95,7 @@
 	<build>
 		<resources>
 			<resource>
-				<directory>assets</directory>
+				<directory>../S2Y Converter UI/assets</directory>
 			</resource>
 		</resources>
 		<plugins>
