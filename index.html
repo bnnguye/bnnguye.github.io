@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="/assets/static/scss/style.scss">
     <style>
         html {
+            width: 100%;
             height: 100%;
+            margin: 0;
+            padding: 0;
         }
         #container {
                 width: inherit;
@@ -66,7 +69,6 @@
     <script>
 
         $(function(){
-          $("#navigation").load("assets/tempaltes/nav.html");
           $("#particles").load("assets/templates/particles.html");
         });
 
@@ -83,8 +85,6 @@
                 // Access the element with id "1" once it's loaded
                 const animatedElement = document.getElementById('animatedElement');
                 if (animatedElement) {
-                    console.log('animatedElement is ready:', animatedElement);
-
                     var hiddenElement = document.getElementById('content');
 
                     function removeAnimationClass() {
