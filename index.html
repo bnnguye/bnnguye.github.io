@@ -60,15 +60,15 @@
     <script>
 
         $(function(){
-          $("#navigation").load("nav.html");
-          $("#particles").load("/assets/templates/particles.html");
+          $("#navigation").load("assets/tempaltes/nav.html");
+          $("#particles").load("assets/templates/particles.html");
         });
 
         var playlistName = null;
 
         document.addEventListener('DOMContentLoaded', function() {
         // Load HTML file containing the element dynamically
-        fetch('nav.html')
+        fetch('assets/templates/nav.html')
             .then(response => response.text())
             .then(html => {
                 // Append the HTML content to the DOM
@@ -88,8 +88,6 @@
 
                         // Make the hidden element visible
                         hiddenElement.style.display = 'block';
-                        const removeLogo = document.getElementById('remove_logo');
-                        removeLogo.style.display = 'none';
                     }
 
                     animatedElement.addEventListener('animationend', removeAnimationClass);
